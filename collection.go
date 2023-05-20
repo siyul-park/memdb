@@ -293,6 +293,11 @@ func (coll *Collection) Drop() {
 		coll.emit(EventDelete, key)
 		return true
 	})
+
+	coll.dataLock.Lock()
+	defer coll.dataLock.Unlock()
+
+	coll.listeners = map[int]func(Event, any){}
 }
 
 func (coll *Collection) insertOne(document map[string]any) (any, error) {
