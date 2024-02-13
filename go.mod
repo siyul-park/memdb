@@ -3,7 +3,7 @@ module github.com/siyul-park/memdb
 go 1.20
 
 require (
-	github.com/go-faker/faker/v4 v4.1.0
+	github.com/go-faker/faker/v4 v4.3.0
 	github.com/iancoleman/strcase v0.2.0
 	github.com/pkg/errors v0.9.1
 	github.com/stretchr/testify v1.8.3
