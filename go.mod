@@ -1,6 +1,6 @@
 module github.com/siyul-park/memdb
 
-go 1.20
+go 1.22.1
 
 require (
 	github.com/go-faker/faker/v4 v4.1.0
